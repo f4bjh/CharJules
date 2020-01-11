@@ -340,12 +340,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E168814
-P 4350 5350
-F 0 "R?" H 4420 5396 50  0000 L CNN
-F 1 "R" H 4420 5305 50  0000 L CNN
-F 2 "" V 4280 5350 50  0001 C CNN
-F 3 "~" H 4350 5350 50  0001 C CNN
-	1    4350 5350
+P 4250 5150
+F 0 "R?" H 4320 5196 50  0000 L CNN
+F 1 "R" H 4320 5105 50  0000 L CNN
+F 2 "" V 4180 5150 50  0001 C CNN
+F 3 "~" H 4250 5150 50  0001 C CNN
+	1    4250 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -439,12 +439,12 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E17D535
-P 7300 3050
-F 0 "C?" H 7415 3096 50  0000 L CNN
-F 1 "C" H 7415 3005 50  0000 L CNN
-F 2 "" H 7338 2900 50  0001 C CNN
-F 3 "~" H 7300 3050 50  0001 C CNN
-	1    7300 3050
+P 7350 3250
+F 0 "C?" H 7465 3296 50  0000 L CNN
+F 1 "C" H 7465 3205 50  0000 L CNN
+F 2 "" H 7388 3100 50  0001 C CNN
+F 3 "~" H 7350 3250 50  0001 C CNN
+	1    7350 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -472,12 +472,12 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E17F30B
-P 3900 5150
-F 0 "C?" H 4015 5196 50  0000 L CNN
-F 1 "C" H 4015 5105 50  0000 L CNN
-F 2 "" H 3938 5000 50  0001 C CNN
-F 3 "~" H 3900 5150 50  0001 C CNN
-	1    3900 5150
+P 4000 4950
+F 0 "C?" H 4115 4996 50  0000 L CNN
+F 1 "C" H 4115 4905 50  0000 L CNN
+F 2 "" H 4038 4800 50  0001 C CNN
+F 3 "~" H 4000 4950 50  0001 C CNN
+	1    4000 4950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -978,11 +978,11 @@ $EndComp
 Wire Wire Line
 	1750 5500 1750 6050
 Text Label 1500 6150 0    50   ~ 0
-+_BATT
++_BATT_1
 Text Label 1500 6050 0    50   ~ 0
-m_BATT
+m_BATT_1
 Text Label 2050 6000 0    50   ~ 0
--_BATT_AAA
+-_BATT_AAA_1
 Wire Wire Line
 	1850 6150 1350 6150
 Wire Wire Line
@@ -994,17 +994,17 @@ Wire Wire Line
 Wire Wire Line
 	1750 5500 1350 5500
 Text Label 2050 5450 0    50   ~ 0
--_BATT_AA
+-_BATT_AA_1
 Wire Wire Line
 	8950 1900 8950 2200
 Text Label 8950 2050 0    50   ~ 0
-+_BATT
++_BATT_1
 Text Label 3750 2950 0    50   ~ 0
-m_BATT
+m_BATT_1
 Wire Wire Line
 	3950 3050 3750 3050
 Text Label 3750 3050 0    50   ~ 0
-+_BATT
++_BATT_1
 Connection ~ 2900 2750
 Wire Wire Line
 	2900 2750 2800 2750
@@ -1018,7 +1018,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3300 3450 3650
 Text Label 3450 3500 0    50   ~ 0
--_BATT_AAA
+-_BATT_AAA_1
 Wire Wire Line
 	2750 5400 2750 5550
 Wire Wire Line
@@ -1030,19 +1030,17 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E5E19E3
-P 3400 5400
-F 0 "#PWR?" H 3400 5150 50  0001 C CNN
-F 1 "GND" V 3405 5272 50  0000 R CNN
-F 2 "" H 3400 5400 50  0001 C CNN
-F 3 "" H 3400 5400 50  0001 C CNN
-	1    3400 5400
+P 3500 5400
+F 0 "#PWR?" H 3500 5150 50  0001 C CNN
+F 1 "GND" V 3505 5272 50  0000 R CNN
+F 2 "" H 3500 5400 50  0001 C CNN
+F 3 "" H 3500 5400 50  0001 C CNN
+	1    3500 5400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2750 5400 2950 5400
 Connection ~ 2750 5400
-Wire Wire Line
-	3250 5400 3400 5400
 NoConn ~ 6250 4950
 Wire Wire Line
 	6250 3900 6350 3900
@@ -1055,8 +1053,6 @@ Wire Wire Line
 	6350 3900 6450 3900
 Wire Wire Line
 	6250 3500 6250 3600
-Wire Wire Line
-	6300 4250 7200 4250
 Wire Wire Line
 	7200 4250 7200 3950
 Wire Wire Line
@@ -1089,8 +1085,6 @@ Wire Wire Line
 	6250 4550 6400 4550
 Wire Wire Line
 	6700 4550 6850 4550
-Wire Wire Line
-	6300 4350 7400 4350
 Wire Wire Line
 	6850 4550 6850 4400
 Wire Wire Line
@@ -1227,4 +1221,95 @@ F 3 "" H 3950 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 4650 4100 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5E84023C
+P 3750 4950
+F 0 "#PWR?" H 3750 4700 50  0001 C CNN
+F 1 "GND" V 3755 4822 50  0000 R CNN
+F 2 "" H 3750 4950 50  0001 C CNN
+F 3 "" H 3750 4950 50  0001 C CNN
+	1    3750 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 4950 3850 4950
+Wire Wire Line
+	3250 5400 3500 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5E87D579
+P 4750 4850
+F 0 "#PWR?" H 4750 4600 50  0001 C CNN
+F 1 "GND" V 4755 4722 50  0000 R CNN
+F 2 "" H 4750 4850 50  0001 C CNN
+F 3 "" H 4750 4850 50  0001 C CNN
+	1    4750 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4850 4850 4850
+Wire Wire Line
+	4150 4950 4250 4950
+Wire Wire Line
+	4250 5000 4250 4950
+Connection ~ 4250 4950
+Wire Wire Line
+	4250 4950 4850 4950
+Wire Wire Line
+	4250 5300 4250 5550
+Wire Wire Line
+	4850 5150 4550 5150
+Wire Wire Line
+	4850 5250 4550 5250
+Text Label 4550 5150 0    50   ~ 0
+m_BATT_2
+Text Label 4600 5250 0    50   ~ 0
++_BATT_2
+Text Label 4250 5500 0    50   ~ 0
+-_BATT_2
+Wire Wire Line
+	8950 4150 8950 4550
+Text Label 8950 4500 0    50   ~ 0
++_BATT_2
+Wire Wire Line
+	6250 4250 7200 4250
+Wire Wire Line
+	6250 4350 7400 4350
+Text Notes 2800 4650 0    50   ~ 0
+manque thermistor
+$Comp
+L power:VDD #PWR?
+U 1 1 5E8D2F21
+P 7350 2950
+F 0 "#PWR?" H 7350 2800 50  0001 C CNN
+F 1 "VDD" H 7367 3123 50  0000 C CNN
+F 2 "" H 7350 2950 50  0001 C CNN
+F 3 "" H 7350 2950 50  0001 C CNN
+	1    7350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8D3B7C
+P 7350 3550
+F 0 "#PWR?" H 7350 3300 50  0001 C CNN
+F 1 "GND" H 7355 3377 50  0000 C CNN
+F 2 "" H 7350 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2950 7350 3050
+Wire Wire Line
+	7350 3400 7350 3550
+Wire Wire Line
+	7600 3050 7350 3050
+Connection ~ 7600 3050
+Connection ~ 7350 3050
+Wire Wire Line
+	7350 3050 7350 3100
+Text Notes 7550 5800 0    50   ~ 0
+Vérifier le schéma par rapport au fonctionnement du composant dans la spec\net vérifier le schéma par rapport à un schéma d'application du net\net vérifier le schéma par rapport à un schéma d'application de la spec
 $EndSCHEMATC
