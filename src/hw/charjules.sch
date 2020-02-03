@@ -373,12 +373,12 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E180625
-P 1800 1250
-F 0 "C?" H 1915 1296 50  0000 L CNN
-F 1 "C" H 1915 1205 50  0000 L CNN
-F 2 "" H 1838 1100 50  0001 C CNN
-F 3 "~" H 1800 1250 50  0001 C CNN
-	1    1800 1250
+P 10700 5600
+F 0 "C?" H 10815 5646 50  0000 L CNN
+F 1 "C" H 10815 5555 50  0000 L CNN
+F 2 "" H 10738 5450 50  0001 C CNN
+F 3 "~" H 10700 5600 50  0001 C CNN
+	1    10700 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -406,12 +406,12 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E185F23
-P 800 1250
-F 0 "C?" H 915 1296 50  0000 L CNN
-F 1 "C" H 915 1205 50  0000 L CNN
-F 2 "" H 838 1100 50  0001 C CNN
-F 3 "~" H 800 1250 50  0001 C CNN
-	1    800  1250
+P 9700 5600
+F 0 "C?" H 9815 5646 50  0000 L CNN
+F 1 "C" H 9815 5555 50  0000 L CNN
+F 2 "" H 9738 5450 50  0001 C CNN
+F 3 "~" H 9700 5600 50  0001 C CNN
+	1    9700 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -471,29 +471,29 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:LM7805_TO220 U?
 U 1 1 5E1FD6D9
-P 1350 1000
-F 0 "U?" H 1350 1242 50  0000 C CNN
-F 1 "LM7805_TO220" H 1350 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1350 1225 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 1350 950 50  0001 C CNN
-	1    1350 1000
+P 10250 5350
+F 0 "U?" H 10250 5592 50  0000 C CNN
+F 1 "LM7805_TO220" H 10250 5501 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10250 5575 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 10250 5300 50  0001 C CNN
+	1    10250 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDD #PWR?
 U 1 1 5E20345A
-P 1950 950
-F 0 "#PWR?" H 1950 800 50  0001 C CNN
-F 1 "VDD" H 1967 1123 50  0000 C CNN
-F 2 "" H 1950 950 50  0001 C CNN
-F 3 "" H 1950 950 50  0001 C CNN
-	1    1950 950 
+P 10850 5300
+F 0 "#PWR?" H 10850 5150 50  0001 C CNN
+F 1 "VDD" H 10867 5473 50  0000 C CNN
+F 2 "" H 10850 5300 50  0001 C CNN
+F 3 "" H 10850 5300 50  0001 C CNN
+	1    10850 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 1000 1950 950 
+	10850 5350 10850 5300
 Wire Wire Line
-	1650 1000 1800 1000
+	10550 5350 10700 5350
 Wire Wire Line
 	5350 2050 5950 2050
 Wire Wire Line
@@ -1268,34 +1268,34 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E464ECA
-P 1800 1400
-F 0 "#PWR?" H 1800 1150 50  0001 C CNN
-F 1 "GND" H 1805 1227 50  0000 C CNN
-F 2 "" H 1800 1400 50  0001 C CNN
-F 3 "" H 1800 1400 50  0001 C CNN
-	1    1800 1400
+P 10700 5750
+F 0 "#PWR?" H 10700 5500 50  0001 C CNN
+F 1 "GND" H 10705 5577 50  0000 C CNN
+F 2 "" H 10700 5750 50  0001 C CNN
+F 3 "" H 10700 5750 50  0001 C CNN
+	1    10700 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E466A26
-P 800 1400
-F 0 "#PWR?" H 800 1150 50  0001 C CNN
-F 1 "GND" H 805 1227 50  0000 C CNN
-F 2 "" H 800 1400 50  0001 C CNN
-F 3 "" H 800 1400 50  0001 C CNN
-	1    800  1400
+P 9700 5750
+F 0 "#PWR?" H 9700 5500 50  0001 C CNN
+F 1 "GND" H 9705 5577 50  0000 C CNN
+F 2 "" H 9700 5750 50  0001 C CNN
+F 3 "" H 9700 5750 50  0001 C CNN
+	1    9700 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 1100 1800 1000
-Connection ~ 1800 1000
+	10700 5450 10700 5350
+Connection ~ 10700 5350
 Wire Wire Line
-	1800 1000 1950 1000
+	10700 5350 10850 5350
 Wire Wire Line
-	800  1100 800  1000
+	9700 5450 9700 5350
 Wire Wire Line
-	800  1000 1050 1000
+	9700 5350 9950 5350
 $Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 5E4C3AB4
@@ -1386,7 +1386,7 @@ F 3 "" H 2350 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2800 1650 2800 1950
-Text Notes 2000 1850 0    50   ~ 0
+Text Notes 600  2300 0    50   ~ 0
 Thermistor \n(à placer sur chacune des piles\ndu pack pile 1)
 Wire Wire Line
 	1900 2350 3950 2350
@@ -1432,4 +1432,47 @@ Wire Wire Line
 	2350 4650 2350 4800
 Text Notes 1050 4500 0    50   ~ 0
 Thermistor \n(à placer sur chacune des piles\ndu pack pile 2)
+$Comp
+L f4bjh:1744428-8 J?
+U 1 1 5E7A084F
+P 8650 5500
+F 0 "J?" H 8543 6167 50  0000 C CNN
+F 1 "1744428-8" H 8543 6076 50  0000 C CNN
+F 2 "TE_1744428-8" H 8650 5500 50  0001 L BNN
+F 3 "Compliant" H 8650 5500 50  0001 L BNN
+F 4 "https://www.te.com/usa-en/product-1744428-8.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 8650 5500 50  0001 L BNN "Champ4"
+F 5 "1744428-8" H 8650 5500 50  0001 L BNN "Champ5"
+	1    8650 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7AA6D1
+P 9300 5550
+F 0 "#PWR?" H 9300 5300 50  0001 C CNN
+F 1 "GND" H 9305 5377 50  0000 C CNN
+F 2 "" H 9300 5550 50  0001 C CNN
+F 3 "" H 9300 5550 50  0001 C CNN
+	1    9300 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5500 9300 5500
+Wire Wire Line
+	9300 5500 9300 5550
+Wire Wire Line
+	9050 5400 9300 5400
+Wire Wire Line
+	9300 5400 9300 5500
+Connection ~ 9300 5500
+Wire Wire Line
+	9050 5100 9700 5100
+Wire Wire Line
+	9700 5100 9700 5350
+Connection ~ 9700 5350
+NoConn ~ 9050 5200
+NoConn ~ 9050 5300
+NoConn ~ 9050 5600
+NoConn ~ 9050 5700
+NoConn ~ 9050 5800
 $EndSCHEMATC
