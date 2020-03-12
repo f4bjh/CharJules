@@ -1458,4 +1458,92 @@ Wire Wire Line
 	8950 1000 8950 1500
 Wire Wire Line
 	7050 1000 8950 1000
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6AD6DA
+P 10100 750
+F 0 "J?" H 10128 726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10128 635 50  0000 L CNN
+F 2 "" H 10100 750 50  0001 C CNN
+F 3 "~" H 10100 750 50  0001 C CNN
+	1    10100 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6B0BFB
+P 10100 1050
+F 0 "J?" H 10128 1026 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10128 935 50  0000 L CNN
+F 2 "" H 10100 1050 50  0001 C CNN
+F 3 "~" H 10100 1050 50  0001 C CNN
+	1    10100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6B4C13
+P 10100 1300
+F 0 "J?" H 10128 1276 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10128 1185 50  0000 L CNN
+F 2 "" H 10100 1300 50  0001 C CNN
+F 3 "~" H 10100 1300 50  0001 C CNN
+	1    10100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6B89DA
+P 10100 1600
+F 0 "J?" H 10128 1576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10128 1485 50  0000 L CNN
+F 2 "" H 10100 1600 50  0001 C CNN
+F 3 "~" H 10100 1600 50  0001 C CNN
+	1    10100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6BB3DF
+P 10100 1900
+F 0 "J?" H 10128 1876 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10128 1785 50  0000 L CNN
+F 2 "" H 10100 1900 50  0001 C CNN
+F 3 "~" H 10100 1900 50  0001 C CNN
+	1    10100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6BC130
+P 10050 2200
+F 0 "J?" H 10078 2176 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10078 2085 50  0000 L CNN
+F 2 "" H 10050 2200 50  0001 C CNN
+F 3 "~" H 10050 2200 50  0001 C CNN
+	1    10050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6BCCAF
+P 10050 2500
+F 0 "J?" H 10078 2476 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10078 2385 50  0000 L CNN
+F 2 "" H 10050 2500 50  0001 C CNN
+F 3 "~" H 10050 2500 50  0001 C CNN
+	1    10050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E6BD8D8
+P 10000 2800
+F 0 "J?" H 10028 2776 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10028 2685 50  0000 L CNN
+F 2 "" H 10000 2800 50  0001 C CNN
+F 3 "~" H 10000 2800 50  0001 C CNN
+	1    10000 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
