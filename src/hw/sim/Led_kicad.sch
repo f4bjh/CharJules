@@ -30,8 +30,8 @@ Wire Wire Line
 	1000 1700 1000 1950
 Wire Wire Line
 	1000 2350 1000 2400
-Text Notes 9800 6350 0    50   ~ 0
-.tran 0.1m 7 5
+Text Notes 9800 5050 0    50   ~ 0
+.tran 0.1m 4
 $Comp
 L Simulation_SPICE:VPULSE V1
 U 1 1 5E71EA42
@@ -59,8 +59,6 @@ F 3 "~" H 10650 5800 50  0001 C CNN
 $EndComp
 Text GLabel 10650 5200 1    50   Input ~ 0
 VCC
-Wire Wire Line
-	10650 5200 10650 5500
 $Comp
 L pspice:0 #GND?
 U 1 1 5E72F3E3
@@ -544,260 +542,513 @@ Connection ~ 2500 1900
 Wire Wire Line
 	2500 1900 2650 1900
 Wire Wire Line
-	10450 1050 10450 1000
+	3600 3050 3600 3000
 Wire Wire Line
-	8450 1800 8600 1800
+	1600 3800 1750 3800
 $Comp
 L pspice:0 #GND?
 U 1 1 5E841464
-P 8900 2700
-F 0 "#GND?" H 8900 2600 50  0001 C CNN
-F 1 "0" H 8900 2789 50  0000 C CNN
-F 2 "" H 8900 2700 50  0001 C CNN
-F 3 "~" H 8900 2700 50  0001 C CNN
-	1    8900 2700
+P 2050 4700
+F 0 "#GND?" H 2050 4600 50  0001 C CNN
+F 1 "0" H 2050 4789 50  0000 C CNN
+F 2 "" H 2050 4700 50  0001 C CNN
+F 3 "~" H 2050 4700 50  0001 C CNN
+	1    2050 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8900 900  1    50   Input ~ 0
+Text GLabel 2050 2900 1    50   Input ~ 0
 VCC
-Text GLabel 10750 1550 1    50   Input ~ 0
+Text GLabel 3900 3550 1    50   Input ~ 0
 LED_G_erreur
 Wire Wire Line
-	8900 2600 8900 2700
+	2050 4600 2050 4700
 $Comp
 L pspice:R R14
 U 1 1 5E84145B
-P 8900 2350
-F 0 "R14" H 8968 2396 50  0000 L CNN
-F 1 "500k" H 8968 2305 50  0000 L CNN
-F 2 "" H 8900 2350 50  0001 C CNN
-F 3 "~" H 8900 2350 50  0001 C CNN
-	1    8900 2350
+P 2050 4350
+F 0 "R14" H 2118 4396 50  0000 L CNN
+F 1 "500k" H 2118 4305 50  0000 L CNN
+F 2 "" H 2050 4350 50  0001 C CNN
+F 3 "~" H 2050 4350 50  0001 C CNN
+	1    2050 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 900  8900 1000
+	2050 2900 2050 3000
 $Comp
 L pspice:R R15
 U 1 1 5E841454
-P 8900 1350
-F 0 "R15" H 8968 1396 50  0000 L CNN
-F 1 "1k" H 8968 1305 50  0000 L CNN
-F 2 "" H 8900 1350 50  0001 C CNN
-F 3 "~" H 8900 1350 50  0001 C CNN
-	1    8900 1350
+P 2050 3350
+F 0 "R15" H 2118 3396 50  0000 L CNN
+F 1 "1k" H 2118 3305 50  0000 L CNN
+F 2 "" H 2050 3350 50  0001 C CNN
+F 3 "~" H 2050 3350 50  0001 C CNN
+	1    2050 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:2N2222A Q5
 U 1 1 5E84144E
-P 8800 1800
-F 0 "Q5" H 8988 1853 60  0000 L CNN
-F 1 "2N2222A" H 8988 1747 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 9000 2000 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 9000 2100 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 9000 2200 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 9000 2300 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9000 2400 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 9000 2500 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 9000 2600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 9000 2700 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 9000 2800 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 9000 2900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9000 3000 60  0001 L CNN "Status"
-F 13 "Q" H 8800 1800 50  0001 C CNN "Spice_Primitive"
-F 14 "2n2222a" H 8800 1800 50  0001 C CNN "Spice_Model"
-F 15 "Y" H 8800 1800 50  0001 C CNN "Spice_Netlist_Enabled"
-F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 8800 1800 50  0001 C CNN "Spice_Lib_File"
-	1    8800 1800
+P 1950 3800
+F 0 "Q5" H 2138 3853 60  0000 L CNN
+F 1 "2N2222A" H 2138 3747 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 2150 4000 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 2150 4100 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 2150 4200 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 2150 4300 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 2150 4400 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 2150 4500 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 2150 4600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 2150 4700 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 2150 4800 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 2150 4900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2150 5000 60  0001 L CNN "Status"
+F 13 "Q" H 1950 3800 50  0001 C CNN "Spice_Primitive"
+F 14 "2n2222a" H 1950 3800 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 1950 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 1950 3800 50  0001 C CNN "Spice_Lib_File"
+	1    1950 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:C C3
 U 1 1 5E84143B
-P 9500 2350
-F 0 "C3" H 9678 2396 50  0000 L CNN
-F 1 "5.6u" H 9678 2305 50  0000 L CNN
-F 2 "" H 9500 2350 50  0001 C CNN
-F 3 "~" H 9500 2350 50  0001 C CNN
-	1    9500 2350
+P 2650 4350
+F 0 "C3" H 2828 4396 50  0000 L CNN
+F 1 "5.6u" H 2828 4305 50  0000 L CNN
+F 2 "" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:0 #GND?
 U 1 1 5E841435
-P 9500 2700
-F 0 "#GND?" H 9500 2600 50  0001 C CNN
-F 1 "0" H 9500 2789 50  0000 C CNN
-F 2 "" H 9500 2700 50  0001 C CNN
-F 3 "~" H 9500 2700 50  0001 C CNN
-	1    9500 2700
+P 2650 4700
+F 0 "#GND?" H 2650 4600 50  0001 C CNN
+F 1 "0" H 2650 4789 50  0000 C CNN
+F 2 "" H 2650 4700 50  0001 C CNN
+F 3 "~" H 2650 4700 50  0001 C CNN
+	1    2650 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 2100 9500 2000
+	2650 4100 2650 4000
 Wire Wire Line
-	9500 2600 9500 2700
-Connection ~ 8900 2000
+	2650 4600 2650 4700
+Connection ~ 2050 4000
 Wire Wire Line
-	8900 2000 8900 2100
+	2050 4000 2050 4100
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:2N2222A Q6
 U 1 1 5E84142A
-P 10350 2000
-F 0 "Q6" H 10538 2053 60  0000 L CNN
-F 1 "2N2222A" H 10538 1947 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 10550 2200 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 10550 2300 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 10550 2400 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 10550 2500 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 10550 2600 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 10550 2700 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 10550 2800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 10550 2900 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 10550 3000 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 10550 3100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 10550 3200 60  0001 L CNN "Status"
-F 13 "Q" H 10350 2000 50  0001 C CNN "Spice_Primitive"
-F 14 "2n2222a" H 10350 2000 50  0001 C CNN "Spice_Model"
-F 15 "Y" H 10350 2000 50  0001 C CNN "Spice_Netlist_Enabled"
-F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 10350 2000 50  0001 C CNN "Spice_Lib_File"
-	1    10350 2000
+P 3500 4000
+F 0 "Q6" H 3688 4053 60  0000 L CNN
+F 1 "2N2222A" H 3688 3947 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 3700 4200 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 3700 4300 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 3700 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 3700 4500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3700 4600 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 3700 4700 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 3700 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 3700 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 3700 5000 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 3700 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3700 5200 60  0001 L CNN "Status"
+F 13 "Q" H 3500 4000 50  0001 C CNN "Spice_Primitive"
+F 14 "2n2222a" H 3500 4000 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 3500 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 3500 4000 50  0001 C CNN "Spice_Lib_File"
+	1    3500 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:R R16
 U 1 1 5E841417
-P 9800 2000
-F 0 "R16" V 9595 2000 50  0000 C CNN
-F 1 "10k" V 9686 2000 50  0000 C CNN
-F 2 "" H 9800 2000 50  0001 C CNN
-F 3 "~" H 9800 2000 50  0001 C CNN
-	1    9800 2000
+P 2950 4000
+F 0 "R16" V 2745 4000 50  0000 C CNN
+F 1 "10k" V 2836 4000 50  0000 C CNN
+F 2 "" H 2950 4000 50  0001 C CNN
+F 3 "~" H 2950 4000 50  0001 C CNN
+	1    2950 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8900 2000 9500 2000
+	2050 4000 2650 4000
 Wire Wire Line
-	9550 2000 9500 2000
-Connection ~ 9500 2000
+	2700 4000 2650 4000
+Connection ~ 2650 4000
 Wire Wire Line
-	10050 2000 10150 2000
+	3200 4000 3300 4000
 $Comp
 L pspice:R R17
 U 1 1 5E84140E
-P 10450 1300
-F 0 "R17" H 10518 1346 50  0000 L CNN
-F 1 "10k" H 10518 1255 50  0000 L CNN
-F 2 "" H 10450 1300 50  0001 C CNN
-F 3 "~" H 10450 1300 50  0001 C CNN
-	1    10450 1300
+P 3600 3300
+F 0 "R17" H 3668 3346 50  0000 L CNN
+F 1 "10k" H 3668 3255 50  0000 L CNN
+F 2 "" H 3600 3300 50  0001 C CNN
+F 3 "~" H 3600 3300 50  0001 C CNN
+	1    3600 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 1000 8900 1000
-Connection ~ 8900 1000
+	3600 3000 2050 3000
+Connection ~ 2050 3000
 Wire Wire Line
-	8900 1000 8900 1100
+	2050 3000 2050 3100
 $Comp
 L pspice:0 #GND?
 U 1 1 5E841404
-P 10450 2400
-F 0 "#GND?" H 10450 2300 50  0001 C CNN
-F 1 "0" H 10450 2489 50  0000 C CNN
-F 2 "" H 10450 2400 50  0001 C CNN
-F 3 "~" H 10450 2400 50  0001 C CNN
-	1    10450 2400
+P 3600 4400
+F 0 "#GND?" H 3600 4300 50  0001 C CNN
+F 1 "0" H 3600 4489 50  0000 C CNN
+F 2 "" H 3600 4400 50  0001 C CNN
+F 3 "~" H 3600 4400 50  0001 C CNN
+	1    3600 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 2200 10450 2400
+	3600 4200 3600 4400
 $Comp
 L pspice:R R18
 U 1 1 5E8413F6
-P 10750 2050
-F 0 "R18" H 10818 2096 50  0000 L CNN
-F 1 "8.2k" H 10818 2005 50  0000 L CNN
-F 2 "" H 10750 2050 50  0001 C CNN
-F 3 "~" H 10750 2050 50  0001 C CNN
-	1    10750 2050
+P 3900 4050
+F 0 "R18" H 3968 4096 50  0000 L CNN
+F 1 "8.2k" H 3968 4005 50  0000 L CNN
+F 2 "" H 3900 4050 50  0001 C CNN
+F 3 "~" H 3900 4050 50  0001 C CNN
+	1    3900 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:0 #GND?
 U 1 1 5E8413F0
-P 10750 2450
-F 0 "#GND?" H 10750 2350 50  0001 C CNN
-F 1 "0" H 10750 2539 50  0000 C CNN
-F 2 "" H 10750 2450 50  0001 C CNN
-F 3 "~" H 10750 2450 50  0001 C CNN
-	1    10750 2450
+P 3900 4450
+F 0 "#GND?" H 3900 4350 50  0001 C CNN
+F 1 "0" H 3900 4539 50  0000 C CNN
+F 2 "" H 3900 4450 50  0001 C CNN
+F 3 "~" H 3900 4450 50  0001 C CNN
+	1    3900 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 1550 10450 1650
+	3600 3550 3600 3650
 Wire Wire Line
-	10450 1650 10450 1800
-Connection ~ 10450 1650
+	3600 3650 3600 3800
+Connection ~ 3600 3650
 Wire Wire Line
-	10750 1550 10750 1650
+	3900 3550 3900 3650
 Wire Wire Line
-	10750 1800 10750 1650
-Connection ~ 10750 1650
+	3900 3800 3900 3650
+Connection ~ 3900 3650
 Wire Wire Line
-	10750 1650 10450 1650
+	3900 3650 3600 3650
 Wire Wire Line
-	10750 2300 10750 2450
-Text Notes 9450 850  0    50   ~ 0
+	3900 4300 3900 4450
+Text Notes 2600 2850 0    50   ~ 0
 erreur
 Wire Wire Line
-	7950 1800 8000 1800
-Connection ~ 7950 1800
+	1100 3800 1150 3800
+Connection ~ 1100 3800
 $Comp
 L pspice:R R13
 U 1 1 5E8413E2
-P 8200 1800
-F 0 "R13" V 7995 1800 50  0000 C CNN
-F 1 "10k" V 8086 1800 50  0000 C CNN
-F 2 "" H 8200 1800 50  0001 C CNN
-F 3 "~" H 8200 1800 50  0001 C CNN
-	1    8200 1800
+P 1350 3800
+F 0 "R13" V 1145 3800 50  0000 C CNN
+F 1 "10k" V 1236 3800 50  0000 C CNN
+F 2 "" H 1350 3800 50  0001 C CNN
+F 3 "~" H 1350 3800 50  0001 C CNN
+	1    1350 3800
 	0    1    1    0   
 $EndComp
 $Comp
 L Simulation_SPICE:VPULSE V2
 U 1 1 5E8413DC
-P 7850 2250
-F 0 "V2" H 7980 2341 50  0000 L CNN
-F 1 "VPULSE" H 7980 2250 50  0000 L CNN
-F 2 "" H 7850 2250 50  0001 C CNN
-F 3 "~" H 7850 2250 50  0001 C CNN
-F 4 "Y" H 7850 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 7850 2250 50  0001 L CNN "Spice_Primitive"
-F 6 "PULSE (0 5 1u 1u 1u 160m 320m)" H 7980 2159 50  0000 L CNN "Spice_Model"
-	1    7850 2250
+P 1000 4250
+F 0 "V2" H 1130 4341 50  0000 L CNN
+F 1 "VPULSE" H 1130 4250 50  0000 L CNN
+F 2 "" H 1000 4250 50  0001 C CNN
+F 3 "~" H 1000 4250 50  0001 C CNN
+F 4 "Y" H 1000 4250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1000 4250 50  0001 L CNN "Spice_Primitive"
+F 6 "PULSE (0 5 1u 1u 1u 160m 320m)" H 1130 4159 50  0000 L CNN "Spice_Model"
+	1    1000 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 2450 7850 2500
+	1000 4450 1000 4500
 Wire Wire Line
-	7850 1800 7850 1600
+	1000 3800 1000 3600
 Wire Wire Line
-	7850 1800 7950 1800
-Connection ~ 7850 1800
+	1000 3800 1100 3800
+Connection ~ 1000 3800
 Wire Wire Line
-	7850 1800 7850 2050
-Text GLabel 7850 1600 1    50   Input ~ 0
+	1000 3800 1000 4050
+Text GLabel 1000 3600 1    50   Input ~ 0
 in_erreur
 $Comp
 L pspice:0 #GND?
 U 1 1 5E8413D0
-P 7850 2500
-F 0 "#GND?" H 7850 2400 50  0001 C CNN
-F 1 "0" H 7850 2589 50  0000 C CNN
-F 2 "" H 7850 2500 50  0001 C CNN
-F 3 "~" H 7850 2500 50  0001 C CNN
-	1    7850 2500
+P 1000 4500
+F 0 "#GND?" H 1000 4400 50  0001 C CNN
+F 1 "0" H 1000 4589 50  0000 C CNN
+F 2 "" H 1000 4500 50  0001 C CNN
+F 3 "~" H 1000 4500 50  0001 C CNN
+	1    1000 4500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10650 5200 10650 5500
+$Comp
+L pspice:0 #GND?
+U 1 1 5E79FA80
+P 5300 5100
+F 0 "#GND?" H 5300 5000 50  0001 C CNN
+F 1 "0" H 5300 5189 50  0000 C CNN
+F 2 "" H 5300 5100 50  0001 C CNN
+F 3 "~" H 5300 5100 50  0001 C CNN
+	1    5300 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 3150 1    50   Input ~ 0
+VCC
+Text GLabel 7450 3750 1    50   Input ~ 0
+LED_batt_absente
+Wire Wire Line
+	5300 4900 5300 5100
+$Comp
+L pspice:R R22
+U 1 1 5E79FA89
+P 5300 4650
+F 0 "R22" H 5368 4696 50  0000 L CNN
+F 1 "500k" H 5368 4605 50  0000 L CNN
+F 2 "" H 5300 4650 50  0001 C CNN
+F 3 "~" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3150 5300 3250
+$Comp
+L pspice:R R21
+U 1 1 5E79FA90
+P 5300 3600
+F 0 "R21" H 5368 3646 50  0000 L CNN
+F 1 "1k" H 5368 3555 50  0000 L CNN
+F 2 "" H 5300 3600 50  0001 C CNN
+F 3 "~" H 5300 3600 50  0001 C CNN
+	1    5300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4100 4450 4100
+$Comp
+L pspice:R R20
+U 1 1 5E79FA97
+P 4650 4100
+F 0 "R20" V 4445 4100 50  0000 C CNN
+F 1 "10k" V 4536 4100 50  0000 C CNN
+F 2 "" H 4650 4100 50  0001 C CNN
+F 3 "~" H 4650 4100 50  0001 C CNN
+	1    4650 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N2222A Q7
+U 1 1 5E79FAAA
+P 5200 4100
+F 0 "Q7" H 5388 4153 60  0000 L CNN
+F 1 "2N2222A" H 5388 4047 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 5400 4300 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5400 4400 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 5400 4500 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 5400 4600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5400 4700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 5400 4800 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5400 4900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 5400 5000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 5400 5100 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 5400 5200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5400 5300 60  0001 L CNN "Status"
+F 13 "Q" H 5200 4100 50  0001 C CNN "Spice_Primitive"
+F 14 "2n2222a" H 5200 4100 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 5200 4100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 5200 4100 50  0001 C CNN "Spice_Lib_File"
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C4
+U 1 1 5E79FAB0
+P 5900 4650
+F 0 "C4" H 6078 4696 50  0000 L CNN
+F 1 "5.6u" H 6078 4605 50  0000 L CNN
+F 2 "" H 5900 4650 50  0001 C CNN
+F 3 "~" H 5900 4650 50  0001 C CNN
+	1    5900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND?
+U 1 1 5E79FAB6
+P 5900 5050
+F 0 "#GND?" H 5900 4950 50  0001 C CNN
+F 1 "0" H 5900 5139 50  0000 C CNN
+F 2 "" H 5900 5050 50  0001 C CNN
+F 3 "~" H 5900 5050 50  0001 C CNN
+	1    5900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4400 5900 4300
+Wire Wire Line
+	5900 4900 5900 5050
+Connection ~ 5300 4300
+Wire Wire Line
+	5300 4300 5300 4400
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N2222A Q8
+U 1 1 5E79FACD
+P 6750 4300
+F 0 "Q8" H 6938 4353 60  0000 L CNN
+F 1 "2N2222A" H 6938 4247 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 6950 4500 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6950 4600 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 6950 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 6950 4800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6950 4900 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6950 5000 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6950 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6950 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 6950 5300 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6950 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6950 5500 60  0001 L CNN "Status"
+F 13 "Q" H 6750 4300 50  0001 C CNN "Spice_Primitive"
+F 14 "2n2222a" H 6750 4300 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 6750 4300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "/home/f4bjh/devel/CharJules/src/hw/sim/2n2222a.lib" H 6750 4300 50  0001 C CNN "Spice_Lib_File"
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R23
+U 1 1 5E79FAD3
+P 6200 4300
+F 0 "R23" V 5995 4300 50  0000 C CNN
+F 1 "10k" V 6086 4300 50  0000 C CNN
+F 2 "" H 6200 4300 50  0001 C CNN
+F 3 "~" H 6200 4300 50  0001 C CNN
+	1    6200 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4300 5900 4300
+Connection ~ 5900 4300
+Wire Wire Line
+	6450 4300 6550 4300
+$Comp
+L pspice:R R24
+U 1 1 5E79FADC
+P 6850 3600
+F 0 "R24" H 6918 3646 50  0000 L CNN
+F 1 "10k" H 6918 3555 50  0000 L CNN
+F 2 "" H 6850 3600 50  0001 C CNN
+F 3 "~" H 6850 3600 50  0001 C CNN
+	1    6850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3250 5300 3250
+Connection ~ 5300 3250
+Wire Wire Line
+	5300 3250 5300 3350
+Wire Wire Line
+	6850 3850 6850 3950
+$Comp
+L pspice:0 #GND?
+U 1 1 5E79FAE6
+P 6850 4700
+F 0 "#GND?" H 6850 4600 50  0001 C CNN
+F 1 "0" H 6850 4789 50  0000 C CNN
+F 2 "" H 6850 4700 50  0001 C CNN
+F 3 "~" H 6850 4700 50  0001 C CNN
+	1    6850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4500 6850 4700
+Wire Wire Line
+	7450 3750 7450 3950
+Connection ~ 6850 3950
+Wire Wire Line
+	6850 3950 6850 4100
+$Comp
+L pspice:R R25
+U 1 1 5E79FAF0
+P 7450 4350
+F 0 "R25" H 7518 4396 50  0000 L CNN
+F 1 "8.2k" H 7518 4305 50  0000 L CNN
+F 2 "" H 7450 4350 50  0001 C CNN
+F 3 "~" H 7450 4350 50  0001 C CNN
+	1    7450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND?
+U 1 1 5E79FAF6
+P 7450 4750
+F 0 "#GND?" H 7450 4650 50  0001 C CNN
+F 1 "0" H 7450 4839 50  0000 C CNN
+F 2 "" H 7450 4750 50  0001 C CNN
+F 3 "~" H 7450 4750 50  0001 C CNN
+	1    7450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4100 7450 3950
+Connection ~ 7450 3950
+Wire Wire Line
+	7450 3950 6850 3950
+Wire Wire Line
+	7450 4600 7450 4750
+$Comp
+L pspice:0 #GND?
+U 1 1 5E79FB00
+P 4300 4800
+F 0 "#GND?" H 4300 4700 50  0001 C CNN
+F 1 "0" H 4300 4889 50  0000 C CNN
+F 2 "" H 4300 4800 50  0001 C CNN
+F 3 "~" H 4300 4800 50  0001 C CNN
+	1    4300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4300 5900 4300
+Text Notes 5900 3100 0    50   ~ 0
+batterie absente
+Wire Wire Line
+	5300 3850 5300 3900
+Wire Wire Line
+	6850 3350 6850 3250
+Wire Wire Line
+	4900 4100 5000 4100
+$Comp
+L pspice:R R19
+U 1 1 5E7AE752
+P 4300 4400
+F 0 "R19" H 4368 4446 50  0000 L CNN
+F 1 "1M" H 4368 4355 50  0000 L CNN
+F 2 "" H 4300 4400 50  0001 C CNN
+F 3 "~" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4150 4300 4100
+Wire Wire Line
+	4300 4100 4400 4100
+Connection ~ 4400 4100
+Wire Wire Line
+	4300 4650 4300 4800
 $EndSCHEMATC
