@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1744428-8-f4bjh
+F Compliant
+$ENDCMP
+#
+$CMP DS2711E+-f4bjh
+F TSSOP-16 Maxim
+$ENDCMP
+#
+#End Doc Library
